@@ -2,6 +2,7 @@ import React from 'react'
 import styles from '../styles/Home.module.css'
 import { Box, AppBar, Toolbar, Grid } from '@mui/material'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const Layout: React.FC = ({ children }) => {
 
@@ -12,10 +13,12 @@ const Layout: React.FC = ({ children }) => {
                 <Toolbar sx={{ display: 'flex', alignContent: 'space-between', height: 130 }}>
                     {/* 홈, 로고 */}
                     <Grid container justifyContent='flex-start' alignItems='center' style={{ paddingLeft: 20 }}>
-                        <Grid item md={1}>
-                            <a href='https://handong.edu/' target="_blank"><img src='/logo.png' style={{ width: '200px' }} /></a>
+                        <Grid item md={2}>
+                            <a href='https://handong.edu/' target="_blank" rel="noreferrer">
+                                <Image src='/logo.png' width={200} height={70}/>
+                            </a>
                         </Grid>
-                        <Grid item md={3} style={{ fontSize: 23, fontWeight: 'bold', marginLeft: '150px' }}>
+                        <Grid item md={3} style={{ fontSize: 23, fontWeight: 'bold', marginLeft: '50px' }}>
                             <Link href='/'>THE POWER-X LAB</Link>
                         </Grid>
                     </Grid>
