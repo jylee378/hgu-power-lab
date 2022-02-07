@@ -31,24 +31,24 @@ const Etc: NextPage = () => {
                             <Grid container display='flex' justifyContent='center'>
                                 <Grid item md={4}>
                                     <a href='https://youtube.com/watch?v=7daV6Pn1s4U&feature=share' target='_blank' rel="noreferrer">
-                                        <Image src='/video1.png' width={400} height={250} />
+                                        <Image src='https://jylee378.github.io/hgu-power-lab/video1.png' width={400} height={250} />
                                     </a>
                                 </Grid>
                                 <Grid item md={4}>
                                     <a href='https://youtube.com/watch?v=g-39OF50pUw&feature=share' target='_blank' rel="noreferrer">
-                                        <Image src='/video2.png' width={400} height={250} />
+                                        <Image src='https://jylee378.github.io/hgu-power-lab/video2.png' width={400} height={250} />
                                     </a>
                                 </Grid>
                             </Grid>
                             <Grid container display='flex' justifyContent='center'>
                                 <Grid item md={4}>
                                     <a href='https://youtube.com/watch?v=srEI4pb4zTU&feature=share' target='_blank' rel="noreferrer">
-                                        <Image src='/video3.png' width={400} height={250} />
+                                        <Image src='https://jylee378.github.io/hgu-power-lab/video3.png' width={400} height={250} />
                                     </a>
                                 </Grid>
                                 <Grid item md={4}>
                                     <a href='https://youtube.com/watch?v=DkzrOt5eC-4&feature=share' target='_blank' rel="noreferrer">
-                                        <Image src='/video4.png' width={400} height={250} />
+                                        <Image src='https://jylee378.github.io/hgu-power-lab/video4.png' width={400} height={250} />
                                     </a>
                                 </Grid>
                             </Grid>
@@ -66,7 +66,7 @@ const Etc: NextPage = () => {
                                 {/* Divider */}
                                 <Box sx={{ width: '150px', borderBottom: '3px solid #dcdcdc' }}></Box>
                             </Box>
-                            <Image src='/books.png' width={1000} height={200} />
+                            <Image src='https://jylee378.github.io/hgu-power-lab/books.png' width={1000} height={200} />
 
                         </Box>
                     )

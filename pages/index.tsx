@@ -30,7 +30,7 @@ const Home: NextPage = () => {
               <Grid item md={6}>
                 <CardMedia
                   component="img"
-                  image="/professor.png"
+                  image="https://jylee378.github.io/hgu-power-lab/professor.png"
                   alt="professor"
                   sx={{ width: "400px" }}
                 />
