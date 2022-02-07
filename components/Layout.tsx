@@ -15,7 +15,7 @@ const Layout: React.FC = ({ children }) => {
                     <Grid container justifyContent='flex-start' alignItems='center' style={{ paddingLeft: 20 }}>
                         <Grid item md={2}>
                             <a href='https://handong.edu/' target="_blank" rel="noreferrer">
-                                <Image src='https://jylee378.github.io/hgu-power-lab/logo.png' width={200} height={70}/>
+                                <Image src='https://jylee378.github.io/logo.png' width={200} height={70}/>
                             </a>
                         </Grid>
                         <Grid item md={3} style={{ fontSize: 23, fontWeight: 'bold', marginLeft: '50px' }}>

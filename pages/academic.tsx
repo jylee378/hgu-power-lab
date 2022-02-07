@@ -16,7 +16,7 @@ const Academic: NextPage = () => {
                     <Typography variant="h5">1986.03~1990.08 : Ph.D. KAIST, Dept. of Nuclear and Quantum Engineering</Typography>
                     
                     <Box style={{marginTop: 170, marginLeft: -15}}>
-                    <Image src='https://jylee378.github.io/hgu-power-lab/kaist.png' width={160} height={40}/>
+                    <Image src='https://jylee378.github.io/kaist.png' width={160} height={40}/>
                     </Box>
                     
                     <Typography variant="h6" style={{marginTop: -30, fontWeight: 'bold'}}>Ph.D. THESIS</Typography>
@@ -25,7 +25,7 @@ const Academic: NextPage = () => {
                     nuclear steam generators = 핵증기발생기의 열수력, 화학 분석을 위한 수치적, 물리적 기초에 대한 고찰</Typography>
                 </Grid>
                 <Grid item md={4}>
-                    <Image width={160} height={560} src='https://jylee378.github.io/hgu-power-lab/generators.png' />
+                    <Image width={160} height={560} src='https://jylee378.github.io/generators.png' />
                 </Grid>
             </Grid>
         </Box>

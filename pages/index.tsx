@@ -4,7 +4,7 @@ import { Box, Card, CardContent, CardMedia, Typography, CardActionArea, Grid } f
 
 const styles = {
   divContainer: {
-    background: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${'/background.png'})`,
+    background: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${'https://jylee378.github.io/hgu-power-lab/background.png'})`,
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
     width: '100vw',
