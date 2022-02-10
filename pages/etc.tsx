@@ -5,6 +5,11 @@ import Image from 'next/image'
 
 const Etc: NextPage = () => {
 
+    const prefix =
+        process.env.NODE_ENV === "production"
+            ? "https://jylee378.github.io/hgu-power-lab"
+            : "";
+
     const [value, setValue] = useState(0);
 
     const handleChange = (event: React.SyntheticEvent, newValue: number) => {
@@ -12,7 +17,7 @@ const Etc: NextPage = () => {
     }
 
     return (
-        <Box style={{ padding: '130px 15% 50px 15%' }}>
+        <Box style={{ padding: '100px 15% 50px 15%' }}>
             <Box sx={{ width: '100%' }}>
                 <Tabs value={value} onChange={handleChange} centered textColor='secondary' indicatorColor='secondary'>
                     <Tab style={{ marginLeft: 30, marginRight: 30 }} label="강연" />
@@ -22,33 +27,33 @@ const Etc: NextPage = () => {
             {
                 value === 0 ?
                     (
-                        <Box sx={{ textAlign: 'center', marginTop: 7 }}>
+                        <Box sx={{ textAlign: 'center', marginTop: 5 }}>
                             <Typography variant='h6'>세상을 바꾸는 시간</Typography>
-                            <Box sx={{ display: 'flex', justifyContent: 'center', marginTop: 5, marginBottom: 5 }}>
+                            <Box sx={{ display: 'flex', justifyContent: 'center', marginTop: 3, marginBottom: 3 }}>
                                 {/* Divider */}
                                 <Box sx={{ width: '150px', borderBottom: '3px solid #dcdcdc' }}></Box>
                             </Box>
-                            <Grid container display='flex' justifyContent='center'>
-                                <Grid item md={4}>
+                            <Grid container display='flex' justifyContent='center' spacing={2}>
+                                <Grid item>
                                     <a href='https://youtube.com/watch?v=7daV6Pn1s4U&feature=share' target='_blank' rel="noreferrer">
-                                        <Image src='https://jylee378.github.io/video1.png' width={400} height={250} />
+                                        <Image src={`${prefix}/video1.png`} width={380} height={220} unoptimized/>
                                     </a>
                                 </Grid>
-                                <Grid item md={4}>
+                                <Grid item>
                                     <a href='https://youtube.com/watch?v=g-39OF50pUw&feature=share' target='_blank' rel="noreferrer">
-                                        <Image src='https://jylee378.github.io/video2.png' width={400} height={250} />
+                                        <Image src={`${prefix}/video2.png`} width={380} height={220} unoptimized/>
                                     </a>
                                 </Grid>
                             </Grid>
-                            <Grid container display='flex' justifyContent='center'>
-                                <Grid item md={4}>
+                            <Grid container display='flex' justifyContent='center' spacing={2} style={{marginTop: 1}}>
+                                <Grid item>
                                     <a href='https://youtube.com/watch?v=srEI4pb4zTU&feature=share' target='_blank' rel="noreferrer">
-                                        <Image src='https://jylee378.github.io/video3.png' width={400} height={250} />
+                                        <Image src={`${prefix}/video3.png`} width={380} height={220} unoptimized/>
                                     </a>
                                 </Grid>
-                                <Grid item md={4}>
+                                <Grid item>
                                     <a href='https://youtube.com/watch?v=DkzrOt5eC-4&feature=share' target='_blank' rel="noreferrer">
-                                        <Image src='https://jylee378.github.io/video4.png' width={400} height={250} />
+                                        <Image src={`${prefix}/video4.png`} width={380} height={220} unoptimized/>
                                     </a>
                                 </Grid>
                             </Grid>
@@ -56,17 +61,17 @@ const Etc: NextPage = () => {
                     )
                     :
                     (
-                        <Box sx={{ textAlign: 'center', marginTop: 7 }}>
+                        <Box sx={{ textAlign: 'center', marginTop: 5 }}>
                             <Typography>탁월함에 이르는 노트의 비밀 : 인류 역사상 가장 뛰어난 천재들의 노트</Typography>
                             <br />
                             <Typography >노트의 품격 : 탁월함에 이르는 쓰기의 비밀</Typography>
                             <br />
                             <Typography >말의 사람 글의 사람</Typography>
-                            <Box sx={{ display: 'flex', justifyContent: 'center', marginTop: 5, marginBottom: 8 }}>
+                            <Box sx={{ display: 'flex', justifyContent: 'center', marginTop: 3, marginBottom: 5 }}>
                                 {/* Divider */}
                                 <Box sx={{ width: '150px', borderBottom: '3px solid #dcdcdc' }}></Box>
                             </Box>
-                            <Image src='https://jylee378.github.io/books.png' width={1000} height={200} />
+                            <Image src={`${prefix}/books.png`} width={1000} height={200} unoptimized/>
 
                         </Box>
                     )

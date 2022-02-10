@@ -10,7 +10,7 @@ const styles = {
 
 const Career: NextPage = () => {
     return (
-        <Box style={{padding: '130px 5% 50px 10%'}}>
+        <Box style={{padding: '130px 10% 50px 10%'}}>
             <Grid container display='flex' spacing={5}>
                 <Grid item md={6}>
                     <Typography style={styles.fontStyle}>1996 ~ present : 한동대학교 기계제어공학부 교수</Typography>

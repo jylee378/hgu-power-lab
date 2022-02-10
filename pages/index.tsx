@@ -2,9 +2,14 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import { Box, Card, CardContent, CardMedia, Typography, CardActionArea, Grid } from '@mui/material'
 
+const prefix =
+        process.env.NODE_ENV === "production"
+            ? "https://jylee378.github.io/hgu-power-lab"
+            : "";
+
 const styles = {
   divContainer: {
-    background: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${'https://jylee378.github.io/hgu-power-lab/background.png'})`,
+    background: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${`${prefix}/background.png`})`,
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
     width: '100vw',
@@ -16,6 +21,7 @@ const styles = {
 }
 
 const Home: NextPage = () => {
+  
   return (
     <>
       <Head>
@@ -30,7 +36,7 @@ const Home: NextPage = () => {
               <Grid item md={6}>
                 <CardMedia
                   component="img"
-                  image="https://jylee378.github.io/hgu-power-lab/professor.png"
+                  image={`${prefix}/professor.png`}
                   alt="professor"
                   sx={{ width: "400px" }}
                 />
