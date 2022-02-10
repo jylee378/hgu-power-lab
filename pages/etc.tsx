@@ -36,24 +36,24 @@ const Etc: NextPage = () => {
                             <Grid container display='flex' justifyContent='center' spacing={2}>
                                 <Grid item>
                                     <a href='https://youtube.com/watch?v=7daV6Pn1s4U&feature=share' target='_blank' rel="noreferrer">
-                                        <Image src={`${prefix}/video1.png`} width={380} height={220} unoptimized/>
+                                        <Image src={`${prefix}/video1.png`} width={380} height={220} alt="video1" unoptimized/>
                                     </a>
                                 </Grid>
                                 <Grid item>
                                     <a href='https://youtube.com/watch?v=g-39OF50pUw&feature=share' target='_blank' rel="noreferrer">
-                                        <Image src={`${prefix}/video2.png`} width={380} height={220} unoptimized/>
+                                        <Image src={`${prefix}/video2.png`} width={380} height={220} alt="video2" unoptimized/>
                                     </a>
                                 </Grid>
                             </Grid>
                             <Grid container display='flex' justifyContent='center' spacing={2} style={{marginTop: 1}}>
                                 <Grid item>
                                     <a href='https://youtube.com/watch?v=srEI4pb4zTU&feature=share' target='_blank' rel="noreferrer">
-                                        <Image src={`${prefix}/video3.png`} width={380} height={220} unoptimized/>
+                                        <Image src={`${prefix}/video3.png`} width={380} height={220} alt="video3" unoptimized/>
                                     </a>
                                 </Grid>
                                 <Grid item>
                                     <a href='https://youtube.com/watch?v=DkzrOt5eC-4&feature=share' target='_blank' rel="noreferrer">
-                                        <Image src={`${prefix}/video4.png`} width={380} height={220} unoptimized/>
+                                        <Image src={`${prefix}/video4.png`} width={380} height={220} alt="video4" unoptimized/>
                                     </a>
                                 </Grid>
                             </Grid>
@@ -71,7 +71,7 @@ const Etc: NextPage = () => {
                                 {/* Divider */}
                                 <Box sx={{ width: '150px', borderBottom: '3px solid #dcdcdc' }}></Box>
                             </Box>
-                            <Image src={`${prefix}/books.png`} width={1000} height={200} unoptimized/>
+                            <Image src={`${prefix}/books.png`} width={1000} height={200} alt="books" unoptimized/>
 
                         </Box>
                     )
