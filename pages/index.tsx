@@ -1,11 +1,12 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { Box, Card, CardContent, CardMedia, Typography, CardActionArea, Grid } from '@mui/material'
+import { Box, Card, CardContent, CardMedia, Typography, CardActionArea, Grid, useMediaQuery } from '@mui/material'
+import { useTheme } from '@mui/material/styles'
 
 const prefix =
-        process.env.NODE_ENV === "production"
-            ? "https://jylee378.github.io/hgu-power-lab"
-            : "";
+  process.env.NODE_ENV === "production"
+    ? "https://jylee378.github.io/hgu-power-lab"
+    : "";
 
 const styles = {
   divContainer: {
@@ -21,14 +22,17 @@ const styles = {
 }
 
 const Home: NextPage = () => {
-  
+
+  const theme = useTheme()
+  const isMiddle = useMediaQuery(theme.breakpoints.down("md"))
+
   return (
     <>
       <Head>
         <title>Power Lab</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <Box style={styles.divContainer}>
+      <Box style={!isMiddle && styles.divContainer || undefined}>
         <Card sx={{ maxWidth: 800 }}>
           <CardActionArea>
             <Grid container display={'flex'}>
