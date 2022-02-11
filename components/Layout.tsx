@@ -47,6 +47,7 @@ const Layout: React.FC = ({ children }) => {
                             {/* 메뉴 */}
                             <RightMenu
                                 prodLink={prodLink}
+                                isTablet={isTablet}
                             />
                         </>
                         // 브라우저 크기 태블릿 이하
@@ -88,6 +89,10 @@ const Layout: React.FC = ({ children }) => {
                     isTablet={isTablet}
                 />
                 <Divider />
+                <RightMenu
+                    prodLink={prodLink}
+                    isTablet={isTablet}
+                />
             </Drawer>
             {/* Body */}
             <Box component="main" sx={{ flexGrow: 1 }}>

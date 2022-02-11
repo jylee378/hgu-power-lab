@@ -16,7 +16,7 @@ const LeftMenu = (props: leftMenuProps) => {
                     <Image src={`${props.prefix}/logo.png`} width={!props.isTablet ? 200 : 140} height={!props.isTablet ? 70 : 50} alt="logo" unoptimized />
                 </a>
             </Grid>
-            <Grid item lg={3} md={6} style={{ fontSize: 21, fontWeight: 'bold', marginLeft: '50px' }}>
+            <Grid item lg={3} md={6} style={{ minWidth: 200, fontSize: 18, fontWeight: 'bold', marginLeft: '50px' }}>
                 <Link href={`${props.prodLink}/`}>THE POWER-X LAB</Link>
             </Grid>
         </Grid>
