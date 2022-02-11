@@ -42,7 +42,7 @@ const Home: NextPage = () => {
                   component="img"
                   image={`${prefix}/professor.png`}
                   alt="professor"
-                  sx={{ width: "400px" }}
+                  sx={{ width: !isMiddle ? "400px" : "100vw", padding: !isMiddle ? "0px" : "30px 50px"}}
                 />
               </Grid>
               {/* 교수 프로필 */}
