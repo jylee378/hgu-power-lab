@@ -14,3 +14,49 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.career {
+ padding: 100px 70px 50px 70px;
+}
+.career h2 {
+  position: relative;
+  font-size: 18px; 
+  color: #000;
+  line-height: 1;
+}
+.career h2:before {
+  content: "";
+  position: absolute;
+  left: -48px;
+  top: 50%;
+  width: 17px;
+  height: 17px;
+  border-radius: 100%;
+  background: #fff;
+  border: 5px solid #7e7e7e;
+  transform: translateY(-50%);
+  box-sizing: border-box;
+}
+.career div {
+  position: relative;
+  padding: 0 0 0 48px;
+}
+.career div:before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: #ddd;
+}
+.career div:first-child::before {
+  top: 10px;
+  height: calc(100% - 10px)
+}
+.career span {
+  font-size: 14px;
+  color: #3b3b3b;
+  margin-left: 30px;
+  line-height: 2;
+}
