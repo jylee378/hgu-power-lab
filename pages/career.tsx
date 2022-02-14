@@ -1,13 +1,6 @@
 import type { NextPage } from 'next'
 import { Box } from '@mui/material'
 
-const styles = {
-    fontStyle: {
-        fontSize: '18px',
-        marginBottom: '20px'
-    }
-}
-
 const data = [
     { period: "1996 ~ present", text: "한동대학교 기계제어공학부 교수" },
     { period: "2016 ~ present", text: "POSCO 석좌교수" },
