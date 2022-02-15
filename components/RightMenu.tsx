@@ -24,7 +24,7 @@ const RightMenu = (props: rightMenuProps) => {
                 <Link href={`${props.prodLink}/conference`}>학회활동</Link>
                 <Link href={`${props.prodLink}/etc`}>기타이력</Link>
                 <Link href={`${props.prodLink}/publication`}>논문</Link>
-                <Link href={`${props.prodLink}/people`}>졸업생</Link>
+                <Link href={`${props.prodLink}/people`}>연구원</Link>
             </Stack>
         </Box>
 
