@@ -32,22 +32,22 @@ const Conference: NextPage = () => {
             </Box>
             {/* 이미지 첫번째 줄 */}
             <Grid container display='center' justifyContent='center' spacing={5}>
-                <Grid item md={2}>
+                <Grid item lg={2}>
                     <Image src={`${prefix}/conference1.jpg`} width={200} height={50} alt="conference1" unoptimized/>
                 </Grid>
-                <Grid item md={2}>
+                <Grid item lg={2}>
                     <Image src={`${prefix}/conference2.jpg`} width={200} height={50} alt="conference2" unoptimized/>
                 </Grid>
             </Grid>
             {/* 이미지 두번째 줄 */}
             <Grid container display='center' justifyContent='center' spacing={5} style={{marginTop: '2px', marginBottom: 10}}>
-                <Grid item md={2}>
+                <Grid item lg={2}>
                     <Image src={`${prefix}/conference3.jpg`} width={200} height={50} alt="conference3" unoptimized/>
                 </Grid>
-                <Grid item md={2}>
+                <Grid item lg={2}>
                     <Image src={`${prefix}/conference4.jpg`} width={200} height={50} alt="conference4" unoptimized/>
                 </Grid>
-                <Grid item md={2}>
+                <Grid item lg={2}>
                     <Image src={`${prefix}/conference5.jpg`} width={200} height={50} alt="conference5" unoptimized/>
                 </Grid>
             </Grid>

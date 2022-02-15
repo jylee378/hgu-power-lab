@@ -95,7 +95,7 @@ const Layout: React.FC = ({ children }) => {
                 />
             </Drawer>
             {/* Body */}
-            <Box component="main" sx={{ flexGrow: 1 }}>
+            <Box component="main" sx={{ flexGrow: 1, minHeight: '850px' }}>
                 <Toolbar />
                 {children}
             </Box>

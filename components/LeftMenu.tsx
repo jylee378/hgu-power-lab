@@ -11,7 +11,7 @@ interface leftMenuProps {
 const LeftMenu = (props: leftMenuProps) => {
     return (
         <Grid container justifyContent='flex-start' alignItems='center' style={{ padding: !props.isTablet ? '0px 0px 0px 20px': '5px 20px' }}>
-            <Grid item lg={2} md={4} xs={4}>
+            <Grid item lg={2} md={4} xs={3}>
                 <a href='https://handong.edu/' target="_blank" rel="noreferrer">
                     <Image src={`${props.prefix}/logo.png`} width={!props.isTablet ? 200 : 140} height={!props.isTablet ? 70 : 50} alt="logo" unoptimized />
                 </a>

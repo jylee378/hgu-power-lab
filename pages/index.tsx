@@ -14,7 +14,7 @@ const styles = {
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
     width: '100vw',
-    height: '80vh',
+    height: '850px',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center'
