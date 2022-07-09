@@ -1,13 +1,9 @@
 import type { NextPage } from 'next'
 import { Box, Typography, Grid } from '@mui/material'
 import Image from 'next/image'
+import { prefix } from "../config/prefix"
 
 const Academic: NextPage = () => {
-
-    const prefix =
-        process.env.NODE_ENV === "production"
-            ? "https://jylee378.github.io/hgu-power-lab"
-            : "";
 
     return (
         <Box style={{padding: '130px 10% 50px 15%'}}>

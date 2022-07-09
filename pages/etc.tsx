@@ -2,13 +2,9 @@ import type { NextPage } from 'next'
 import React, { useState } from 'react'
 import { Box, Tab, Tabs, Typography, Grid } from '@mui/material'
 import Image from 'next/image'
+import { prefix } from '../config/prefix'
 
 const Etc: NextPage = () => {
-
-    const prefix =
-        process.env.NODE_ENV === "production"
-            ? "https://jylee378.github.io/hgu-power-lab"
-            : "";
 
     const [value, setValue] = useState(0);
 

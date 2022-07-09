@@ -2,11 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import { Box, Card, CardContent, CardMedia, Typography, CardActionArea, Grid, useMediaQuery } from '@mui/material'
 import { useTheme } from '@mui/material/styles'
-
-const prefix =
-  process.env.NODE_ENV === "production"
-    ? "https://jylee378.github.io/hgu-power-lab"
-    : "";
+import { prefix } from "../config/prefix"
 
 const styles = {
   divContainer: {

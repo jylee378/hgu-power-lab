@@ -1,10 +1,6 @@
 import type { NextPage } from 'next'
 import { Box, Typography, Divider, Grid } from '@mui/material'
-
-const prefix =
-  process.env.NODE_ENV === "production"
-    ? "https://jylee378.github.io/hgu-power-lab"
-    : "";
+import { prefix } from "../config/prefix"
 
 const styles = {
     divContainer: {
