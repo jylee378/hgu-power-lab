@@ -1,8 +1,8 @@
 export const data = [
     { period: "1996 ~ present", text: "한동대학교 기계제어공학부 교수" },
     { period: "2016 ~ present", text: "POSCO 석좌교수" },
-    { period: "2013 ~ present", text: "한동대학교 산학협력단장" },
-    { period: "2013 ~ present", text: "산학연구인재개발처장" },
+    { period: "2013 ~ 2021", text: "한동대학교 산학협력단장" },
+    { period: "2013 ~ 2021", text: "산학연구인재개발처장" },
     { period: "2004 ~ present", text: "포항시 건설 자문위원" },
     { period: "2017 ~ 2020", text: "MOLTEX(UK) 기술자문위원" },
     { period: "2015 ~ 2018", text: "한국원자력학회 대구 경북 지부 지부장" },

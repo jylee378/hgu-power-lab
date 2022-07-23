@@ -9,14 +9,10 @@ import MenuIcon from '@mui/icons-material/Menu';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import LeftMenu from './LeftMenu'
 import RightMenu from './RightMenu'
+import { prefix } from '../config/prefix';
 
 const Layout: React.FC = ({ children }) => {
-
-    const prefix =
-        process.env.NODE_ENV === "production"
-            ? "https://jylee378.github.io/hgu-power-lab"
-            : "";
-
+    
     const prodLink =
         process.env.NODE_ENV === "production"
             ? "/hgu-power-lab"
